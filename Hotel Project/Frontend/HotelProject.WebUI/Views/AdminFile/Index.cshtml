@@ -1,0 +1,15 @@
+﻿
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+
+<form method="post" asp-controller="AdminFile" asp-action="Index" enctype="multipart/form-data">
+    <input type="file" name="file" class="form-control"/>
+    <br />
+    <button class="btn btn-primary">Dosyayı Yükle</button>
+</form>
+
+
+

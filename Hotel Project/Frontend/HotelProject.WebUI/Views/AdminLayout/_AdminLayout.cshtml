@@ -1,0 +1,84 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <partial name="~/Views/Partials/HeadPartial.cshtml"></partial>
+
+<body>
+
+
+    <div id="main-wrapper">
+      
+     <partial name="~/Views/Partials/NavHeaderPartial.cshtml"></partial>
+  
+       <partial name="~/Views/Partials/HeaderPartial.cshtml"></partial>
+        <!--**********************************
+            Header end ti-comment-alt
+      
+            Sidebar start
+        ***********************************-->
+      <partial name="~/Views/Partials/SideBarPartial.cshtml"></partial> 
+        <!--**********************************
+            Sidebar end
+       
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                               @RenderBody()
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy; Designed & Developed by <a href="https://themeforest.net/user/quixlab">Quixlab</a> 2018</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+ <partial name="~/Views/Partials/ScriptPartial.cshtml"></partial>
+
+</body>
+
+</html>
+

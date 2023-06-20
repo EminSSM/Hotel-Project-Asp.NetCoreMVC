@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>HotelProject.DataAccessLayer</id>
+    <version>1.0.0</version>
+    <authors>HotelProject.DataAccessLayer</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="HotelProject.EntityLayer" version="1.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="6.0.16" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="6.0.16" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\EMIN\Desktop\C#\ASP.Net Core Web Api\UdemyCourses\Asp.Net Core Api\MyUdemyProject\ApiConsume\HotelProject.DataAccessLayer\bin\Debug\net6.0\HotelProject.DataAccessLayer.runtimeconfig.json" target="lib\net6.0\HotelProject.DataAccessLayer.runtimeconfig.json" />
+    <file src="C:\Users\EMIN\Desktop\C#\ASP.Net Core Web Api\UdemyCourses\Asp.Net Core Api\MyUdemyProject\ApiConsume\HotelProject.DataAccessLayer\bin\Debug\net6.0\HotelProject.DataAccessLayer.dll" target="lib\net6.0\HotelProject.DataAccessLayer.dll" />
+  </files>
+</package>

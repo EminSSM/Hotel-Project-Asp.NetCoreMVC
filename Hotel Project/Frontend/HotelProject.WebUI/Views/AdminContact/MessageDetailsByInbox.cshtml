@@ -1,0 +1,34 @@
+﻿
+@model InboxContactDto
+@{
+    ViewData["Title"] = "Inbox";
+    Layout = "~/Views/AdminLayout/_AdminLayout.cshtml";
+}
+                   
+                                <div class="email-left-box"><a href="/AdminContact/AddSendMessage" class="btn btn-primary btn-block">Yeni Mesaj Oluştur</a>
+
+                                   <partial name="SideBarAdminContactPartial.cshtml"></partial>
+                                   <partial name="SideBarAdminCategoryContactPartial.cshtml"></partial>
+                                </div>
+                            <div class="read-content">
+                                        <div class="media pt-5">
+                                            <img class="mr-3 rounded-circle" src="/adminTheme/images/avatar/1.jpg">
+                                            <div class="media-body">
+                                                <h5 class="m-b-3">@Model.Name</h5>
+                                                <p class="m-b-2">@(((DateTime)Model.Date).ToString("dd-MMM-yyyy"))</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <hr>
+                                        <div class="media mb-4 mt-1">
+                                            <div class="media-body"><span class="float-right">07:23 AM</span>
+                                                <h4 class="m-0 text-primary">@Model.Subject</h4><small class="text-muted">Kime:@Model.Mail</small>
+                                            </div>
+                                        </div>
+                                        <p>@Model.Message</p>
+                                      
+                                        <div class="form-group p-t-15">
+                                            <textarea class="w-100 p-20 l-border-1" name="" id="" cols="30" rows="5" placeholder="It's really an amazing.I want to know more about it..!"></textarea>
+                                        </div>
+                                    </div>
+                        
